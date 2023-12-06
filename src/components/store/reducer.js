@@ -8,6 +8,7 @@ const initState = {
       price: 12,
       remainingAmount: 5,
       outOfStock: false,
+      quantity: Number(),
     },
     {
       id: self.crypto.randomUUID(),
@@ -15,8 +16,9 @@ const initState = {
       title: "Đồ chơi trẻ em",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta asperiores veniam repellat unde debitis quisquam magnam magni ut deleniti!",
       price: 20,
-      remainingAmount: 3,
+      remainingAmount: 0,
       outOfStock: true,
+      quantity: Number(),
     },
     {
       id: self.crypto.randomUUID(),
@@ -24,8 +26,9 @@ const initState = {
       title: "Robot Biến hình",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta asperiores veniam repellat unde debitis quisquam magnam magni ut deleniti!",
       price: 14,
-      remainingAmount: 5,
+      remainingAmount: 10,
       outOfStock: false,
+      quantity: Number(),
     },
     {
       id: self.crypto.randomUUID(),
@@ -33,15 +36,21 @@ const initState = {
       title: "Con sâu",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta asperiores veniam repellat unde debitis quisquam magnam magni ut deleniti!",
       price: 8,
-      remainingAmount: 5,
+      remainingAmount: 8,
       outOfStock: false,
+      quantity: Number(),
     },
   ],
 };
 
 function redeucer(state = initState, action) {
-  console.log(action.payload);
-  return state;
+  switch (action.type) {
+    case "":
+      break;
+
+    default:
+      return state;
+  }
 }
 
 export default redeucer;

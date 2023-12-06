@@ -1,4 +1,6 @@
 function CartBody() {
+  const dataStorage = localStorage.getItem("data");
+  const cartData = JSON.parse(dataStorage);
   return (
     <tbody id="my-cart-body">
       {/* CART BODY */}
